@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "le2k0lszP08OVQPXw2uUviTa/9i3D9gSwQ+bcdZ6yWdO0hz8cvWznu7/75QkVvyuD12oc5I5R7KrnX3yj6O5TQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\katyl\\source\\repos\\LR9_ASP_Zhyhlova\\LR9_ASP_Zhyhlova\\LR9_ASP_Zhyhlova.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\katyl\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

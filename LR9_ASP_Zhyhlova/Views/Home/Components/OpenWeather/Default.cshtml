@@ -1,0 +1,77 @@
+﻿@model LR9_ASP_Zhyhlova.Models.ResponseWeather
+
+<div class="div">
+    <div class="cont">
+        <table>
+            <tr>
+                <td colspan="2" class="up">  <h2>@(Model.name)</h2> </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="up">
+                    <img src=@("https://openweathermap.org/img/w/" + Model.weather[0].icon + ".png") />
+                    <h2>@Model.main.temp °C</h2>
+                </td>
+            </tr>
+            <tr>
+                <td>Відчувається</td>
+                <td>@Model.main.feels_like °C</td>
+            </tr>
+            <tr>
+                <td>Макс. темп.</td>
+                <td>@Model.main.temp_max °C</td>
+            </tr>
+            <tr>
+                <td>Мін. темп.</td>
+                <td>@Model.main.temp_min °C</td>
+            </tr>
+            <tr>
+                <td>Швидкість вітру</td>
+                <td>@Model.wind.speed км/год</td>
+            </tr>
+            <tr>
+                <td>Тиск</td>
+                <td>@Model.main.pressure Н/м²</td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<style>
+    .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        margin-top: 10px;
+    }
+
+    .cont {
+        padding: 20px;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .up {
+        background-color: #f2f2f2;
+        font-size: 18px;
+    }
+
+    img {
+        width: 50px;
+        height: 50px;
+    }
+</style>

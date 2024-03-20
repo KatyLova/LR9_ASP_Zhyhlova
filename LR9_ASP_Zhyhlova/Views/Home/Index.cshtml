@@ -1,0 +1,6 @@
+﻿@{
+    var city = "Mykolaiv";
+}
+
+@await Component.InvokeAsync("ShowProduct")
+@await Component.InvokeAsync("OpenWeather", city)

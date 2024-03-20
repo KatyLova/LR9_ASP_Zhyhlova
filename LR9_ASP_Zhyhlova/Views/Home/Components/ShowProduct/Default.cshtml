@@ -1,0 +1,57 @@
+﻿@model IEnumerable<LR9_ASP_Zhyhlova.Models.Product>
+
+<div class="div">
+    <h2>Таблиця:</h2>
+    <div class="cont">
+        <table>
+            <tr class="uptab">
+                <td>Id</td>
+                <td>Назва</td>
+                <td>Ціна</td>
+            </tr>
+            @foreach (var value in Model)
+            {
+                <tr>
+                    <td>@value.Id</td>
+                    <td>@value.Name</td>
+                    <td>@value.Price₴</td>
+                </tr>
+            }
+        </table>
+    </div>
+</div>
+
+<style>
+    .div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-top: 10px;
+    }
+
+    .cont {
+        padding: 20px;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .uptab {
+        background-color: #f2f2f2;
+        font-size: 18px;
+    }
+</style>
